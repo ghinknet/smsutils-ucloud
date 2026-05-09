@@ -31,6 +31,9 @@ jobs:
         shell: sh
         run: |
           set -e
+          
+          cd ./v3
+          
           # Extract the 'go' directive from go.mod (e.g. 'go 1.25').
           v=$(awk '/^go /{print $2; exit}' go.mod || true)
           if [ -z "$v" ]; then
@@ -39,6 +42,8 @@ jobs:
           fi
           echo "Detected go version: $v"
           echo "go-version=$v" >> $GITHUB_OUTPUT
+          
+          cd ../
 
       - name: Fetch tags
         shell: sh
@@ -49,7 +54,9 @@ jobs:
         shell: sh
         run: |
           set -eux
+          
           cd ./v3
+          
           module=$(awk '/^module /{print $2; exit}' go.mod)
           echo "Detected module: $module"
           module_go_version=$(awk '/^go /{print $2; exit}' go.mod || true)

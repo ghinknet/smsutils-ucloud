@@ -19,8 +19,8 @@ github.com/stretchr/testify v1.11.1 h1:7s2iGBzp5EwR7/aIZr8ao5+dra3wiQyKjjFuvgVKu
 github.com/stretchr/testify v1.11.1/go.mod h1:wZwfW3scLgRK+23gO65QZefKpKQRnfz6sD981Nm4B6U=
 github.com/ucloud/ucloud-sdk-go v0.22.68 h1:TFUsH7xXItESB0tr62f3uHija2okVA7E1DK/eooGmSA=
 github.com/ucloud/ucloud-sdk-go v0.22.68/go.mod h1:dyLmFHmUfgb4RZKYQP9IArlvQ2pxzFthfhwxRzOEPIw=
-go.gh.ink/smsutils/v3 v3.1.3 h1:QgyqGxZD4BfbbeE14QB62uM5PHB02UlR2zcWIJRN468=
-go.gh.ink/smsutils/v3 v3.1.3/go.mod h1:CdUZWdeF1s3WPeiQGUse7Q/38dCsT2vWHicNmweF+JE=
+go.gh.ink/smsutils/v3 v3.1.4 h1:bCzAMXyIch6S7xn3+rNw4M5UuTe2dPfj/JK02qWGKLQ=
+go.gh.ink/smsutils/v3 v3.1.4/go.mod h1:YfiYcKeKI7uZtZ62AuM9lAdIixdBTuvSqpWjQU6ht1Y=
 go.gh.ink/toolbox v1.14.1 h1:qTEX5LA++ZhLEsr9CVgxql6v1kDfuQyOhM9eX1VKeQ4=
 go.gh.ink/toolbox v1.14.1/go.mod h1:WlVlSZL+yKIOV9bINXQVnBxVLegXOP9vcL+1+6oBQM8=
 golang.org/x/crypto v0.0.0-20180904163835-0709b304e793/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=

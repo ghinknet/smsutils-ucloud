@@ -1,10 +1,10 @@
 module go.gh.ink/smsutils/ucloud/v3
 
-go 1.26.2
+go 1.25.0
 
 require (
 	github.com/ucloud/ucloud-sdk-go v0.22.68
-	go.gh.ink/smsutils/v3 v3.1.3
+	go.gh.ink/smsutils/v3 v3.1.4
 )
 
 require (
