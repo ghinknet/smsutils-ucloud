@@ -49,7 +49,7 @@ jobs:
         shell: sh
         run: |
           set -eux
-
+          cd ./v3
           module=$(awk '/^module /{print $2; exit}' go.mod)
           echo "Detected module: $module"
           module_go_version=$(awk '/^go /{print $2; exit}' go.mod || true)
