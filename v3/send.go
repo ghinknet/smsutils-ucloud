@@ -3,6 +3,7 @@ package ucloud
 import (
 	"errors"
 	"strconv"
+	"strings"
 
 	"github.com/ucloud/ucloud-sdk-go/ucloud"
 	uerr "github.com/ucloud/ucloud-sdk-go/ucloud/error"
@@ -13,10 +14,14 @@ import (
 
 func (c Client) SendMessage(dest string, sender string, template string, vars model.Vars) error {
 	// Try to parse number
-	dest, _, _, _, err := utils.ProcessNumberForChinese(dest)
+	_, countryCode, nationalNumber, _, err := utils.ProcessNumberForChinese(dest)
 	if err != nil {
 		return err
 	}
+	dest = strings.Join([]string{
+		"(", strconv.FormatInt(countryCode, 10), ")",
+		strconv.FormatInt(nationalNumber, 10),
+	}, "")
 
 	// Preprocess vars
 	params := make([]string, len(vars))
